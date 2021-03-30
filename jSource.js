@@ -16,7 +16,7 @@ function play(id) {
 
     if (t == 81) {
         download("NewData", JSON.stringify(subject));
-        alert("Please wait and do not close task");
+        alert("Please wait and do not close the window.");
         return;
     }
 
