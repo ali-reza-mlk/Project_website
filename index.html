@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>RPS Experiment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="light-theme">
+
+    <h1 style="text-align: center; font-size: 2vw;">Rock Paper Scissors</h1>
+
+
+
+    <p style="font-size: 1.2vw;" id="instruction">Thanks for participating in our mini experiment. Please use your personal computer (and not your phone) to play this game. Your opponents are computer programs that do not remember or use any of your last decisions and simply create sequences of their own. Your simple task is to figure out what their next move is and exploit that to gather points. This test will take 10 to 15 minutes on average.</p>
+
+    <p id="temp"></p>
+
+    <div>
+
+        <h2 class="score">Scores</h2>
+        <p class="You">You</p>
+
+        <div style="position: absolute; left: 50%; top: 20%;">
+            <b style="position: relative; left: -50%; font-size: 2.5vw" id="OpChange"></b>
+        </div>
+
+        <p class="Opponent">Opponent</p>
+        <p class="ScoreYou" id="You">0</p>
+        <p class="ScoreOpponent" id="Opponent">0</p>
+        <div style="position: absolute; top: 26%; left: 41.2%;"><b>R</b></div>
+        <div style="position: absolute; top: 26%; left: 49.5%;"><b>P</b></div>
+        <div style="position: absolute; top: 26%; left: 57.7%;"><b>S</b></div>
+        <input type="button" class="btnR" onclick="play('R')" id="R">
+        <input type="button" class="btnP" onclick="play('P')" id="P">
+        <input type="button" class="btnS" onclick="play('S')" id="S">
+        <!-- <textarea class="tbox" id="tbox" cols="5" readonly></textarea> -->
+        <div class="tbox" id="tbox"></div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="jSource.js"></script>
+

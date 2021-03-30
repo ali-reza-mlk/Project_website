@@ -1,0 +1,159 @@
+/* ------------------------
+    CSS codes
+   ------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+
+:root {
+    --gray: #808080;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: 'Work Sans';
+}
+
+body {
+    background: var(--bg);
+}
+
+ul {
+    font-family: 'Work Sans';
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: disc;
+}
+
+p {
+    font-size: 1.3vw;
+}
+
+
+.score {
+    position: absolute;
+    text-align: center;
+    top: 28vh;
+    right: 20vw;
+    font-size: 1.5vw;
+}
+
+.You {
+    position: absolute;
+    top: 33%;
+    right: 25.5%;
+    font-size: 1.4vw;
+}
+
+.Opponent {
+    position: absolute;
+    top: 33%;
+    right: 16%;
+    font-size: 1.4vw;
+}
+
+
+.ScoreYou {
+    position: absolute;
+    top: 38%;
+    right: 26%;
+    font-size: 1.4vw;
+}
+
+.ScoreOpponent {
+    position: absolute;
+    top: 38%;
+    right: 18.5%;
+    font-size: 1.4vw;
+}
+
+
+
+
+.btnR {
+    position: absolute;
+    top: 30%;
+    left: 38.5%;
+    height: 5.9vw;
+    width: 5.9vw;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-image: url(pics/rockbutton.gif);
+    background-position: center;
+    cursor: pointer;
+}
+
+.btnP {
+    position: absolute;
+    top: 30%;
+    left: 46.75%;
+    height: 5.9vw;
+    width: 5.9vw;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-image: url(pics/paperbutton.gif);
+    background-position: center;
+    cursor: pointer;
+}
+
+.btnS {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    height: 5.9vw;
+    width: 5.9vw;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-image: url(pics/scissorsbutton.gif);
+    background-position: center;
+    cursor: pointer;
+}
+
+.tbox {
+    position: absolute;
+    background-color: white;
+    top: 50vh;
+    left: 39.5vw;
+    height: 8vw;
+    width: 20vw;
+    font-size: 0.9vw;
+    resize: none;
+    overflow: hidden
+}
+
+
+.btnR:focus {
+    outline-style: none;
+}
+
+.btnS:focus {
+    outline-style: none;
+}
+
+.btnP:focus {
+    outline-style: none;
+}
+
+
+.light-theme {
+    --bg: var(--gray);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--gray);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--gray);
+    --btnBg: var(--gray);
+    --btnFontColor: var(--black);
+}
